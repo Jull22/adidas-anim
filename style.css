@@ -1,0 +1,134 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: fantasy;
+    min-height:100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    perspective: 1000px;
+    
+}
+
+.container{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card {
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    width: 45vh;
+    border-radius: 30px;
+    padding: 0rem 2rem;
+    background-color: rgb(242, 234, 248);
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
+    transition: all 0.75s ease-out;
+    
+}
+
+.shoe {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    
+
+}
+.shoe img {
+    width: 20rem;
+    z-index:2;
+    transition: all 0.75s ease-out;
+}
+
+
+.circle {
+    width: 15rem;
+    height: 15rem;
+    background: linear-gradient(
+        to right, 
+        rgb(196, 120, 120, 0.7), 
+        rgb(71, 48, 80, 0.7));
+    border-radius: 50%;
+    
+    position: absolute;
+    z-index: 1;
+}
+
+.description h1 {
+    font-size: 2.5rem;
+    transition: all 0.75s ease-out;
+
+
+}
+.description h3 {
+    font-family: monospace;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    padding: 1rem 0;
+    transition: all 0.75s ease-out;
+
+
+}
+
+
+
+.buttons {
+    margin-top:30px;
+    display: flex;
+    justify-content: space-around;
+    gap:1rem;
+    transition: all 0.75s ease-out;
+
+
+}
+
+.size {
+    display:flex;
+    justify-content: center;
+    font-family: monospace;
+    background: white;
+    font-weight: bolder;
+    width: 30px;
+    border-radius: 0 20px;
+    padding: 5px 30px;
+    border:0;
+    cursor: pointer;
+    box-shadow: 3px 4px 1.6px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.active{
+    background-color: rgb(65, 60, 60);
+    color: white;
+}
+
+.purchase{
+    background-color: rgb(196, 120, 120, 0.7);
+    border:none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 0 20px;
+    margin-top: 150px;
+
+    box-shadow: 3px 4px 1.6px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.2);
+    font-weight: bolder;
+    transition: all 0.75s ease-out;
+
+    
+
+}
+
